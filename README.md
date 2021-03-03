@@ -12,6 +12,6 @@ The alpha-beta agent improves on the brute-force agent by implementing [alpha-be
 
 Since they both make optimal choices, the moves made by these two as tic-tac-toe players are not different. However, the execution time for the alpha-beta agent is significantly lower, since it ignores large portions of the game tree that are irrelevant.
 
-To demonstrate this, here are two different games, one between two brute-force agents and one between two alpha-beta agents:
+To demonstrate this, here are the first three moves from two different games, one between two brute-force agents and one between two alpha-beta agents:
 
 <img src="https://github.com/cmgodwin/tic-tac-toe_agents/blob/main/agent_output/brute_force_moves.png?raw=true" height=527><img src="https://github.com/cmgodwin/tic-tac-toe_agents/blob/main/agent_output/alpha-beta_moves.png?raw=true">
