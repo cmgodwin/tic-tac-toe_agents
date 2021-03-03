@@ -14,4 +14,4 @@ Since they both make optimal choices, the moves made by these two as tic-tac-toe
 
 To demonstrate this, here are two different games, one between two brute-force agents and one between two alpha-beta agents:
 
-<img src="https://github.com/cmgodwin/tic-tac-toe_agents/blob/main/agent_output/brute_force_moves.png?raw=true"><img src="https://github.com/cmgodwin/tic-tac-toe_agents/blob/main/agent_output/alpha-beta_moves.png?raw=true">
+<img src="https://github.com/cmgodwin/tic-tac-toe_agents/blob/main/agent_output/brute_force_moves.png?raw=true" height=527><img src="https://github.com/cmgodwin/tic-tac-toe_agents/blob/main/agent_output/alpha-beta_moves.png?raw=true">
