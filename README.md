@@ -16,4 +16,4 @@ To demonstrate this, here are the first three moves from two different games, on
 
 <img src="https://github.com/cmgodwin/tic-tac-toe_agents/blob/main/agent_output/brute_force_moves.png?raw=true" height=527><img src="https://github.com/cmgodwin/tic-tac-toe_agents/blob/main/agent_output/alpha-beta_moves.png?raw=true">
 
-We can see that the amount of states processed by the brute-force method for each move is much higher. As a result, the brute-force agents take about 11 seconds to play out a full 3x3 tic-tac-toe game, while the alpha-beta agents take just under 1 second.
+We can see that the amount of states processed by the brute-force method for each move is much higher. As a result, the brute-force agents take about 11 seconds to play out a full 3x3 tic-tac-toe game, while the alpha-beta agents take just under 1 second. 
