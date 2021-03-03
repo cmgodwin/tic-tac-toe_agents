@@ -39,58 +39,6 @@ def _pick_agent(player):
 
     return AGENTS[agent][1](player)
 
-'''
-def main():
-    #prompts for board size, winning sequence length, and starting at a random state
-    board_size = int(input("Enter N for an NxN board: "))
-    k = int(input("Enter the winning sequence length K: "))
-    random_state = str(input("Start the game at a random state? y/n: "))
-    print("Choosing player X...")
-    player_x = _pick_agent(Player.X)
-
-    print("Choosing player O...")
-    player_o = _pick_agent(Player.O)
-    play = "y"
-    num_simulations = 1
-    num_times = 1
-    performance = Performance()
-
-    num_x_wins = 0
-    num_o_wins = 0
-    num_draws = 0
-    player_x_total_time = 0
-    player_o_total_time = 0
-
-    while play == "y":
-        for i in range(num_times):
-            game = Game(player_x, player_o)
-            performance = game.play(board_size, k, random_state)
-
-            num_x_wins += performance.num_x_wins
-            num_o_wins += performance.num_o_wins
-            num_draws += performance.num_draws
-            player_x_total_time += performance.player_x_total_time
-            player_o_total_time += performance.player_o_total_time
-
-
-        player_x_average_runtime = player_x_total_time / num_simulations
-        player_o_average_runtime = player_o_total_time / num_simulations
-
-        #outputs for relevant stats, including average runtime for each player, number of draws, number of wins for each player, and the state space
-        print("Player X's average runtime over " + str(num_simulations) + " simulations was " + str(player_x_average_runtime) + " seconds")
-        print("Player O's average runtime over " + str(num_simulations) + " simulations was " + str(player_o_average_runtime) + " seconds")
-        print("The number of draws was " + str(num_draws))
-        print("The number of wins by Player X was " + str(num_x_wins))
-        print("The number of wins by Player O was " + str(num_o_wins))
-
-        play = input("Play again? y/[n]: ")
-        if play == "y":
-            num_times = int(input("How many simulations?: "))
-            num_simulations += num_times
-
-if __name__ == "__main__":
-    main()
-'''
 #prompts for board size, winning sequence length, and starting at a random state
 board_size = int(input("Enter N for an NxN board: "))
 k = int(input("Enter the winning sequence length K: "))
@@ -102,7 +50,7 @@ print("Choosing player O...")
 player_o = _pick_agent(Player.O)
 play = "y"
 num_simulations = 1
-num_times = 1
+num_times = int(input("How many simulations?: "))
 performance = Performance()
 
 num_x_wins = 0
@@ -122,16 +70,16 @@ while play == "y":
         player_x_total_time += performance.player_x_total_time
         player_o_total_time += performance.player_o_total_time
 
+    if num_times > 1:
+        #stats for carrying out multiple simulations
+        player_x_average_runtime = player_x_total_time / num_times
+        player_o_average_runtime = player_o_total_time / num_times
+        print("Player X's average runtime over " + str(num_simulations) + " simulations was " + str(player_x_average_runtime) + " seconds")
+        print("Player O's average runtime over " + str(num_simulations) + " simulations was " + str(player_o_average_runtime) + " seconds")
+        print("The number of wins by Player X was " + str(num_x_wins))
+        print("The number of wins by Player O was " + str(num_o_wins))
+        print("The number of draws was " + str(num_draws))
 
-    player_x_average_runtime = player_x_total_time / num_simulations
-    player_o_average_runtime = player_o_total_time / num_simulations
-
-    #outputs for relevant stats, including average runtime for each player, number of draws, number of wins for each player, and the state space
-    print("Player X's average runtime over " + str(num_simulations) + " simulations was " + str(player_x_average_runtime) + " seconds")
-    print("Player O's average runtime over " + str(num_simulations) + " simulations was " + str(player_o_average_runtime) + " seconds")
-    print("The number of draws was " + str(num_draws))
-    print("The number of wins by Player X was " + str(num_x_wins))
-    print("The number of wins by Player O was " + str(num_o_wins))
 
     play = input("Play again? y/[n]: ")
     if play == "y":
