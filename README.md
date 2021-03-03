@@ -10,4 +10,4 @@ The brute-force agent is an optimal tic-tac-toe player utilizing the [minimax al
 
 The alpha-beta agent improves on the brute-force agent by implementing [alpha-beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)
 
-Since they are both optimal players, the choices made by these two as tic-tac-toe players are not different. However, the execution time for the alpha-beta agent is significantly lower, since it ignores large portions of the game tree that are irrelevant to the current choice.
+Since they are both optimal players, the choices made by these two as tic-tac-toe players are not different. However, the execution time for the alpha-beta agent is significantly lower, since it ignores large portions of the game tree that are irrelevant.
