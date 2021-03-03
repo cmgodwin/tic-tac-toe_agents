@@ -4,7 +4,7 @@ The main purpose of this project was to implement brute force and alpha-beta pru
 
 To try out the code, run the main.py file in the runnable_code folder with python using a command line.
 
-The two other files in the root of the repository are my main contribution to the code. The rest of the code was provided as the basis for an assignment.
+The two other files in the root of the repository are my main contribution to the code. The rest of the code was provided as the basis for the assignment.
 
 The brute-force agent is an optimal tic-tac-toe player utilizing the [minimax algorithm](https://en.wikipedia.org/wiki/Minimax)
 
