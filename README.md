@@ -2,7 +2,7 @@
 
 The main purpose of this project was to implement brute force and alpha-beta pruning agents that play tic-tac-toe optimally.
 
-To try out the code, download `runnable_code` and run the `main.py` file with python using a command line.
+To try out the code, and run the `main.py` file in the `runnable_code` folder.
 
 The two other files in the root of the repository are my main contribution to the code, along with the user-input and stats collecting in main.py. The rest of the code was provided as the basis for the assignment.
 
